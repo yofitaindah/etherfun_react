@@ -105,7 +105,7 @@ function Footer(props) {
             <div className="container">
                 <div className="wrap-fx">
                     <div className="Copyright">
-                        Copyright © 2023. Designed by <Link to="https://themeforest.net/user/themesflat/portfolio">Themesflat</Link>
+                        Copyright © 2024. Etherfun
                     </div>
                     <ul className="social">
                         <li>
