@@ -125,7 +125,7 @@ function ConnectWallet(props) {
         </div>
     </section>
 
-            {<CTA />}
+            {/* {<CTA />} */}
             
         </div>
     );

@@ -72,17 +72,22 @@ const menus = [
                 sub: 'Team Details',
                 links: '/team_details'
             },
+            {
+                id: 3,
+                sub: 'FaQ',
+                links: '/faqs'
+            },
         ]
     },
     {
         id: 4,
         name: 'Swap',
-        links: '/',
+        links: '/connect',
     },
     {
         id: 5,
         name: 'Create Token',
-        links: '/',
+        links: '/project_submit',
     },
     // {
     //     id: 6,

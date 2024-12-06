@@ -37,7 +37,7 @@ function Footer(props) {
                 <div className="row">
                     <div className="footer-logo">
                         <div className="logo_footer">
-                            <img src={require ("../../assets/images/logo_etherfun.png")} alt="" />
+                            <img src={require ("../../assets/images/logo_etherfun2.png")} alt="" />
                         </div>
                         <p>A one-stop destination meme blockchain</p>
                     </div>

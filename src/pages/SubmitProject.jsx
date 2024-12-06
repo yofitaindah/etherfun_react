@@ -15,7 +15,7 @@ function SubmitProject(props) {
             <div className="row">
                 <div className="col-md-12">
                     <form action="#">
-                        <div className="project-info-form check-radio">
+                        {/* <div className="project-info-form check-radio">
                             <h4 className="title">Step 1: Identity confirmation</h4>
                             <div className="form-inner">
                                 <fieldset>
@@ -63,13 +63,13 @@ function SubmitProject(props) {
                                     </ul>  
                                 </fieldset>
                             </div>
-                        </div>
+                        </div> */}
         
                         <div className="project-info-form style">
-                            <h6 className="title mb30">Step 2: Upload document</h6>
+                            <h6 className="title mb30">Launch Your Token on Etherfun</h6>
                             <div className="form-inner">
                                 <div className="upload-img mb22">
-                                    <div className="col img_1"> 
+                                    {/* <div className="col img_1"> 
                                         <div className="box"> 
                                             <input type="file" name="file-1[]" id="file-1" className="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple="" />
                                             <label htmlFor="file-1">
@@ -79,7 +79,7 @@ function SubmitProject(props) {
                                             </label>
                                         </div>
                                         <p>National ID Front</p>
-                                    </div>
+                                    </div> */}
                                     <div className="col img_2">
                                         <div className="box"> 
                                             <input type="file" name="file-2[]" id="file-2" className="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple="" />
@@ -89,9 +89,9 @@ function SubmitProject(props) {
                                                 <span className="file"></span>
                                             </label>
                                         </div>
-                                        <p>National ID Back</p>
+                                        <p>Max Size 5MB</p>
                                     </div>
-                                    <div className="col img_3">
+                                    {/* <div className="col img_3">
                                         <div className="box"> 
                                             <input type="file" name="file-3[]" id="file-3" className="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple="" />
                                             <label htmlFor="file-3">
@@ -101,7 +101,7 @@ function SubmitProject(props) {
                                             </label>
                                         </div>
                                         <p>Selfie with National ID</p>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <fieldset className="mb21">
                                     <label className="fz16 mb8" htmlFor="file-4">
@@ -130,17 +130,61 @@ function SubmitProject(props) {
 
                                 <fieldset className="mb18">
                                     <label className="fz16 mb8" htmlFor="national">
-                                        National ID number
+                                        Token Name
                                     </label>
                                     <fieldset>
-                                        <input className="pl14" type="text" id="national" placeholder="e.g. 0123456789" required="" /> 
+                                        <input className="pl14" type="text" id="national" placeholder="enter token name" required="" /> 
                                     </fieldset>
                                 </fieldset>
-                                <p className="note">Note: We only support JPG and PNG images under 25 MB.</p>
+
+                                <fieldset className="mb18">
+                                    <label className="fz16 mb8" htmlFor="national">
+                                        Token Symbol
+                                    </label>
+                                    <fieldset>
+                                        <input className="pl14" type="text" id="national" placeholder="enter token symbol" required="" /> 
+                                    </fieldset>
+                                </fieldset>
+
+                                <fieldset className="mb18">
+                                    <label className="fz16 mb8" htmlFor="national">
+                                        Description
+                                    </label>
+                                    <fieldset>
+                                        <input className="pl14" type="text" id="national" placeholder="enter description" required="" /> 
+                                    </fieldset>
+                                </fieldset>
+
+                                <fieldset className="mb18">
+                                    <label className="fz16 mb8" htmlFor="national">
+                                        Twitter Link
+                                    </label>
+                                    <fieldset>
+                                        <input className="pl14" type="text" id="national" placeholder="enter twitter link" required="" /> 
+                                    </fieldset>
+                                </fieldset>
+
+                                <fieldset className="mb18">
+                                    <label className="fz16 mb8" htmlFor="national">
+                                        Telegram Link
+                                    </label>
+                                    <fieldset>
+                                        <input className="pl14" type="text" id="national" placeholder="enter telegram link" required="" /> 
+                                    </fieldset>
+                                </fieldset>
+
+                                <fieldset className="mb18">
+                                    <label className="fz16 mb8" htmlFor="national">
+                                        Website Link
+                                    </label>
+                                    <fieldset>
+                                        <input className="pl14" type="text" id="national" placeholder="enter website link" required="" /> 
+                                    </fieldset>
+                                </fieldset>
                             </div>
                         </div>  
         
-                        <div className="project-info-form style">
+                        {/* <div className="project-info-form style">
                             <h6 className="title mb32">Step 3: Personal infomation</h6>
                             <div className="form-inner">
                                 <fieldset className="mb22">
@@ -193,11 +237,11 @@ function SubmitProject(props) {
                                     </label>
                                 </fieldset>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="wrap-btn">
                             <button type="submit" className="tf-button style2">
-                                Submit project
+                                Submit
                             </button>
                         </div>
                     </form>
@@ -207,7 +251,7 @@ function SubmitProject(props) {
     </section>
 
 
-            {<CTA />}
+            {/* {<CTA />} */}
             
         </div>
     );

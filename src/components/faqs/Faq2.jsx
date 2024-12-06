@@ -46,7 +46,7 @@ function Faq2(props) {
                               }}
                        
                         >
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <div className="icon-box-style4">
                                         <div className="icon-wrapper">
                                             <svg width="65" height="68" viewBox="0 0 65 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,7 +175,7 @@ function Faq2(props) {
                                         </div> 
                                         <h6><Link to="#">Blockchain</Link></h6>
                                     </div>
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                     </Swiper>
   
                     </div>

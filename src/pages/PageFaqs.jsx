@@ -137,7 +137,7 @@ function PageFaqs(props) {
         </div>
     </section>
 
-            {<CTA />}
+            {/* {<CTA />} */}
             
         </div>
     );

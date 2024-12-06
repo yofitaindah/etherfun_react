@@ -4,7 +4,7 @@ import { Link , NavLink } from 'react-router-dom';
 import menus from '../../pages/menu';
 import Button from '../button/index'; 
 import './styles.scss';
-import logo from '../../assets/images/logo_etherfun.png'
+import logo from '../../assets/images/logo_etherfun2.png'
 
 
 
@@ -64,7 +64,7 @@ const Header = () => {
                         }
                     </ul>
                 </nav>
-                <Button title='Connect' path='/home_v2' addclass='style1'/>  
+                <Button title='Connect' path='/connect' addclass='style1'/>  
                 <div className={`mobile-button ${menuActive ? 'active' : ''}`} onClick={handleMenuActive}><span></span></div>
             </div>
         </div> 

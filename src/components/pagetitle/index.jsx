@@ -15,7 +15,7 @@ function PageTitle(props) {
                 <div className="row">
                     <div className="col-md-12">
                             <div className="breadcrumbs" data-aos="zoom-in" data-aos-duration="800">
-                                <h3>Discover Live New Pairs!</h3>
+                                <h3>Discover Live New Pairs on Etherfun!</h3>
                                 <ul>
                                     {/* <li>
                                         <Link to="/home_v2">Home</Link>
