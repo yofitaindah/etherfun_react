@@ -16,13 +16,13 @@ function Token(props) {
                         <div className="col-lg-6 col-md-6">
                             <div className="tf-title left mb40" data-aos-delay="500" data-aos="fade-up" data-aos-duration="800">
                                 <h2 className="title">
-                                    Statistics token
+                                    Statistics Token Etherfun
                                 </h2>
                             </div>
                             <div className="desc-token" data-aos-delay="500" data-aos="fade-up" data-aos-duration="800">
                                 <div className="total-token">
-                                    <p>Total Supply: <span>15,000,000</span></p>
-                                    <p>Public sale: <span> $0.24</span></p>
+                                    <p>Total Supply: <span>XXX.XXX.XXX</span></p>
+                                    {/* <p>Public sale: <span> $0.24</span></p> */}
                                 </div>
                                 <ul className="describe_chart">
                                     <li>
@@ -92,7 +92,7 @@ function Token(props) {
                             </div>
                         
                         </div>
-                        <div className="col-md-12">
+                        {/* <div className="col-md-12">
                             <div className="tf-title left mt17 mb40" data-aos="fade-up" data-aos-duration="800">
                                 <h2 className="title">
                                     Tokenomics
@@ -261,13 +261,13 @@ function Token(props) {
                                         <p>2</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> */}
+                        {/* </div> */}
                     </div>
                 </div>
             </section>
 
-            {<CTA />}
+            {/* {<CTA />} */}
             
         </div>
     );
