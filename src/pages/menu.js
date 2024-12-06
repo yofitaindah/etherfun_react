@@ -52,28 +52,28 @@ const menus = [
 
         // ]
     },
-    {
-        id: 3,
-        name: 'Page',
-        links: '#',
-        namesub: [
-            {
-                id: 1,
-                sub: 'Token',
-                links: '/token'
-            },
-            {
-                id: 2,
-                sub: 'Connect Wallet',
-                links: '/connect'
-            },
-            {
-                id: 3,
-                sub: 'Team Details',
-                links: '/team_details'
-            },
-        ]
-    },
+    // {
+    //     id: 3,
+    //     name: 'Page',
+    //     links: '#',
+    //     namesub: [
+    //         {
+    //             id: 1,
+    //             sub: 'Token',
+    //             links: '/token'
+    //         },
+    //         {
+    //             id: 2,
+    //             sub: 'Connect Wallet',
+    //             links: '/connect'
+    //         },
+    //         {
+    //             id: 3,
+    //             sub: 'Team Details',
+    //             links: '/team_details'
+    //         },
+    //     ]
+    // },
     // {
     //     id: 4,
     //     name: 'Roadmap',
