@@ -32,7 +32,7 @@ function HomeTwo(props) {
            {<Banner data={dataBanner} />}
 
            
-            {<Featured data={dataFeatured} />}
+            {/* {<Featured data={dataFeatured} />} */}
 
 
             <div className="bg_body">
@@ -49,22 +49,22 @@ function HomeTwo(props) {
 
                 {/* {<Technology data={dataPartner} />} */}
 
-                {<Roadmap data={dataRoadmap} />}
+                {/* {<Roadmap data={dataRoadmap} />} */}
 
 
                 {/* {<Project6 data={dataProject} />} */}
 
-                {<Team data={dataTeam} />}
+                {/* {<Team data={dataTeam} />} */}
             </div>
 
             {/* {<Partner2 data={dataPartner} />} */}
 
             
-            {<CTA2 />}
+            {/* {<CTA2 />} */}
 
-            {<Faqs data={dataFaq} />} 
+            {/* {<Faqs data={dataFaq} />}  */}
 
-            {<CTA />}
+            {/* {<CTA />} */}
 
  
 
