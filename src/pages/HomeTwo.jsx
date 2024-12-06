@@ -6,6 +6,9 @@ import Featured from '../components/featured';
 import dataFeatured from '../assets/fake-data/data-feature';
 import Project5 from '../components/project/project_v5';
 import dataProject from '../assets/fake-data/data-project';
+import ProjectList from './ProjectList';
+import blog from '../pages/BlogList';
+import blog2 from '../pages/BlogList';
 // import Tier from '../components/tier';
 import dataTier from '../assets/fake-data/data-tier';
 import Technology from '../components/technology';
@@ -23,6 +26,7 @@ import Team from '../components/team';
 import dataTeam from '../assets/fake-data/data-team';
 import CTA2 from '../components/cta/CTA2';
 import CTA from '../components/cta';
+import BlogList from '../pages/BlogList';
 
 function HomeTwo(props) {
     return (
@@ -43,7 +47,9 @@ function HomeTwo(props) {
             
                 {<Project5 data={dataProject} />}
 
-                {<Token2 data={dataToken} />}
+                {<ProjectList/>}
+
+                {/* {<Token2 data={dataToken} />} */}
 
                 {/* {<Tier data={dataTier} />} */}
 

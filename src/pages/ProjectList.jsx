@@ -16,16 +16,16 @@ function ProjectList(props) {
     const [dataTab] = useState([
         {
             id: 1,
-            title: 'Open IGO',
+            title: 'Oncoming',
         },
-        {
-            id: 2,
-            title: 'Upcoming',
-        },
-        {
-            id: 3,
-            title: 'Past IGO',
-        },
+        // {
+        //     id: 2,
+        //     title: 'Upcoming',
+        // },
+        // {
+        //     id: 3,
+        //     title: 'Past IGO',
+        // },
 
     ]);
     return (
@@ -50,7 +50,7 @@ function ProjectList(props) {
                                             
                                             
                                         </TabList>
-                                        <div className="seclect-box" data-aos="fade-in" data-aos-duration="800">
+                                        {/* <div className="seclect-box" data-aos="fade-in" data-aos-duration="800">
                                             <div className="dropdown selector-drop" id="category">
                                             
                                                         <Link to="#" className="btn-selector btn-link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,7 +73,7 @@ function ProjectList(props) {
                                                     <li className="dropdown-item" data-toggle="modal" data-target="#edit_client">Sort by View</li>
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     
                                     
@@ -220,7 +220,7 @@ function ProjectList(props) {
                 </div>
             </section>
 
-            {<CTA />}
+            {/* {<CTA />} */}
             
         </div>
     );

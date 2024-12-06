@@ -4,10 +4,10 @@ const menus = [
         name: 'Home',
         links: '/home_v2',
     },
-    {
-        id: 2,
-        name: 'Project',
-        links: '/project_v2',
+    // {
+        // id: 2,
+        // name: 'Project',
+        // links: '/project_v2',
         // namesub: [
         //     {
         //         id: 1,
@@ -51,44 +51,44 @@ const menus = [
         //     },
 
         // ]
-    },
-    // {
-    //     id: 3,
-    //     name: 'Page',
-    //     links: '#',
-    //     namesub: [
-    //         {
-    //             id: 1,
-    //             sub: 'Token',
-    //             links: '/token'
-    //         },
-    //         {
-    //             id: 2,
-    //             sub: 'Connect Wallet',
-    //             links: '/connect'
-    //         },
-    //         {
-    //             id: 3,
-    //             sub: 'Team Details',
-    //             links: '/team_details'
-    //         },
-    //     ]
-    // },
-    // {
-    //     id: 4,
-    //     name: 'Roadmap',
-    //     links: '/roadmap',
-    // },
-    // {
-    //     id: 5,
-    //     name: 'Blog',
-    //     links: '/blog_list',
     // },
     {
-        id: 6,
-        name: 'Contact',
-        links: 'contact', 
+        id: 3,
+        name: 'Etherfun',
+        links: '#',
+        namesub: [
+            {
+                id: 1,
+                sub: 'Token',
+                links: '/token'
+            },
+            {
+                id: 2,
+                sub: 'Roadmap',
+                links: '/roadmap'
+            },
+            {
+                id: 3,
+                sub: 'Team Details',
+                links: '/team_details'
+            },
+        ]
     },
+    {
+        id: 4,
+        name: 'Swap',
+        links: '/',
+    },
+    {
+        id: 5,
+        name: 'Create Token',
+        links: '/',
+    },
+    // {
+    //     id: 6,
+    //     name: 'Contact',
+    //     links: 'contact', 
+    // },
     
 ]
 
