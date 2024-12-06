@@ -166,7 +166,7 @@ function Project2(props) {
                 </div>
             </section>
 
-            {<CTA />}
+            {/* {<CTA />} */}
             
         </div>
     );

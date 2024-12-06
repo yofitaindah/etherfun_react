@@ -18,7 +18,7 @@ function PageTitle(props) {
                                 <h3>Discover potential projects</h3>
                                 <ul>
                                     <li>
-                                        <Link to="/">Home</Link>
+                                        <Link to="/home_v2">Home</Link>
                                     </li>
                                     <li>
                                         <span className="icon">

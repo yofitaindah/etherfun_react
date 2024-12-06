@@ -109,7 +109,7 @@ function Contact(props) {
                     </div>
                 </div>
             </section>
-            {<CTA />}
+            {/* {<CTA />} */}
             
         </div>
     );
