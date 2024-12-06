@@ -91,7 +91,7 @@ function Footer(props) {
                                 <Link to="/token">Etherfun</Link>
                             </li>
                             <li>
-                                <Link to="/home_v2">Swap</Link>
+                                <Link to="/connect">Swap</Link>
                             </li>
                             <li>
                                 <Link to="/team_details">Our Team</Link>
