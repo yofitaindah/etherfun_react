@@ -118,7 +118,7 @@ function Roadmap(props) {
             </div>
         </div>
     </section>
-            {<CTA />}
+            {/* {<CTA />} */}
             
         </div>
     );

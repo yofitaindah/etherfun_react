@@ -28,7 +28,7 @@ function Token(props) {
                                     <li>
                                         <img src={require ("../assets/images/chart/color_1.png")} alt="" />
                                         <div className="desc">
-                                            <p className="name">Farming Pool</p>
+                                            <p className="name">Liquidity</p>
                                             <p className="number">27.3%</p>
                                         </div>
                                     </li>
@@ -42,32 +42,32 @@ function Token(props) {
                                     <li>
                                         <img src={require ("../assets/images/chart/color_3.png")} alt="" />
                                         <div className="desc">
-                                            <p className="name">Ecosystem</p>
+                                            <p className="name">Marketing</p>
                                             <p className="number">7.5%</p>
                                         </div>
                                     </li>
                                     <li>
                                         <img src={require ("../assets/images/chart/color_4.png")} alt="" />
                                         <div className="desc">
-                                            <p className="name">Advisor</p>
+                                            <p className="name">CEX</p>
                                             <p className="number">7.03%</p>
                                         </div>
                                     </li>
                                     <li>
                                         <img src={require ("../assets/images/chart/color_5.png")} alt="" />
                                         <div className="desc">
-                                            <p className="name">Private Sale</p>
+                                            <p className="name">Tax Buy</p>
                                             <p className="number">23.45%</p>
                                         </div>
                                     </li>
                                     <li>
                                         <img src={require ("../assets/images/chart/color_6.png")} alt="" />
                                         <div className="desc">
-                                            <p className="name">Liquidity</p>
+                                            <p className="name">Tax Sell</p>
                                             <p className="number">13.3%</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <img src={require ("../assets/images/chart/color_7.png")} alt="" />
                                         <div className="desc">
                                             <p className="name">Marketing</p>
@@ -80,7 +80,7 @@ function Token(props) {
                                             <p className="name">Team</p>
                                             <p className="number">5.3%</p>
                                         </div>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>

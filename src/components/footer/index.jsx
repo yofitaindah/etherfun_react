@@ -85,13 +85,13 @@ function Footer(props) {
                         </h5>
                         <ul className="widget-link">
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/home_v2">Home</Link>
                             </li>
                             <li>
-                                <Link to="/project_v2">Project</Link>
+                                <Link to="/token">Etherfun</Link>
                             </li>
                             <li>
-                                <Link to="/blog_list">Blog</Link>
+                                <Link to="/home_v2">Swap</Link>
                             </li>
                             <li>
                                 <Link to="/team_details">Our Team</Link>

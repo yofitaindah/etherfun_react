@@ -53,17 +53,6 @@ function TeamDetails(props) {
                                 In vel ligula et nulla scelerisque suscipit. Quisque in nisi viverra, 
                                 mattis felis id, porttitor dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla rutrum eros, 
-                                vitae fringilla metus sodales vel. Praesent vehicula ac nunc sit amet rhoncus. 
-                                In vel ligula et nulla scelerisque suscipit. Quisque in nisi viverra, mattis felis id, porttitor dui. 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                            <p>
-                                Donec interdum nisl sed tellus euismod ultricies. Integer eu lacus tellus. 
-                                Phasellus rhoncus tellus maximus dui rhoncus, vitae egestas lacus cursus. 
-                                Pellentesque suscipit lorem ac libero lacinia consequat.
-                            </p>
                             <div className="spacing"></div>
                             <div className="box">
                                 <h6 className="title">
@@ -106,7 +95,7 @@ function TeamDetails(props) {
         </div>
     </section>
 
-            {<CTA />}
+            {/* {<CTA />} */}
             
         </div>
     );
