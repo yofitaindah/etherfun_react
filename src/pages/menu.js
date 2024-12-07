@@ -2,7 +2,7 @@ const menus = [
     {
         id: 1,
         name: 'Home',
-        links: '/home_v2',
+        links: '/',
     },
     // {
         // id: 2,
