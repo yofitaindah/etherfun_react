@@ -2,58 +2,10 @@ const menus = [
     {
         id: 1,
         name: 'Home',
-        links: '/home_v2',
+        links: '/',
     },
-    // {
-        // id: 2,
-        // name: 'Project',
-        // links: '/project_v2',
-        // namesub: [
-        //     {
-        //         id: 1,
-        //         sub: 'Project 01',
-        //         links: '/project_v1'
-        //     },
-        //     {
-        //         id: 2,
-        //         sub: 'Project 02',
-        //         links: '/project_v2'
-        //     },
-        //     {
-        //         id: 3,
-        //         sub: 'Project 03 ',
-        //         links: '/project_v3'
-        //     },
-        //     {
-        //         id: 4,
-        //         sub: 'Project 04',
-        //         links: '/project_v4'
-        //     },
-        //     {
-        //         id: 5,
-        //         sub: 'Project 05',
-        //         links: '/project_v5'
-        //     },
-        //     {
-        //         id: 6,
-        //         sub: 'Project List',
-        //         links: '/project_list'
-        //     },
-        //     {
-        //         id: 7,
-        //         sub: 'Project Details',
-        //         links: '/project_details'
-        //     },
-        //     {
-        //         id: 8,
-        //         sub: 'Submit Project',
-        //         links: '/project_submit'
-        //     },
-
-        // ]
-    // },
     {
-        id: 3,
+        id: 2,
         name: 'Etherfun',
         links: '#',
         namesub: [
@@ -80,20 +32,15 @@ const menus = [
         ]
     },
     {
-        id: 4,
+        id: 3,
         name: 'Swap',
         links: '/connect',
     },
     {
-        id: 5,
+        id: 4,
         name: 'Create Token',
         links: '/project_submit',
     },
-    // {
-    //     id: 6,
-    //     name: 'Contact',
-    //     links: 'contact', 
-    // },
     
 ]
 
