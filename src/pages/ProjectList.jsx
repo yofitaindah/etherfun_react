@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import PageTitle from "../components/pagetitle";
 import CTA from "../components/cta/cta_v2";
@@ -8,6 +8,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 import data from "../assets/fake-data/data-project";
 import Countdown from "../components/countdown";
+import { getPoolChain } from "../api/dextoolService";
 
 function ProjectList(props) {
   const [dataTab] = useState([
@@ -24,6 +25,15 @@ function ProjectList(props) {
     //     title: 'Past IGO',
     // },
   ]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getPoolChain();
+      console.log(data);
+    };
+
+    fetchData();
+  }, []);
   return (
     <div className="inner-page">
       {<PageTitle title="Project List" />}
