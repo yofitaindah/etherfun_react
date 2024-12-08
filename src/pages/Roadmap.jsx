@@ -1,7 +1,6 @@
 import React from 'react';
 
 import PageTitle from '../components/pagetitle';
-import CTA from '../components/cta/cta_v2';
 
 import icon from '../assets/images/common/down.svg'
 
@@ -24,11 +23,11 @@ function Roadmap(props) {
                                     <img src={icon} alt="" />
                                 </div>
                                 <div className="content">
-                                    <h6 className="date">April 16, 2022</h6>
+                                    <h6 className="date">Phase 1</h6>
                                     <ul>
-                                        <li>Cras molestie ullamcorper augue nec pulvinar</li>
-                                        <li>Nam mollis sapien ut sapien gravida sollicitudin</li>
-                                        <li>Mauris vel nisl quis dolor accumsan luctus</li>
+                                        <li>$eFUN Research and Ideation</li>
+                                        <li>Launching Etherfun on Uniswap, ERC20</li>
+                                        <li>Engaging the community through community outreach</li>
                                     </ul>
                                 </div>
                             </div>
@@ -37,11 +36,12 @@ function Roadmap(props) {
                                     <img src={icon} alt="" />
                                 </div>
                                 <div className="content">
-                                    <h6 className="date">April 16, 2022</h6>
+                                    <h6 className="date">Phase 3</h6>
                                     <ul>
-                                        <li>Cras molestie ullamcorper augue nec pulvinar</li>
-                                        <li>Nam mollis sapien ut sapien gravida sollicitudin</li>
-                                        <li>Mauris vel nisl quis dolor accumsan luctus</li>
+                                        <li>Collaboration with KOLs and CTs</li>
+                                        <li>More advertising, promotions, and collaborations</li>
+                                        <li>$eFUN Whitepaper Development</li>
+                                        <li>Recruiting a development team</li>
                                     </ul>
                                 </div>
                             </div>
@@ -50,11 +50,11 @@ function Roadmap(props) {
                                     <img src={icon} alt="" />
                                 </div>
                                 <div className="content">
-                                    <h6 className="date">April 16, 2022</h6>
+                                    <h6 className="date">Phase 5</h6>
                                     <ul>
-                                        <li>Cras molestie ullamcorper augue nec pulvinar</li>
-                                        <li>Nam mollis sapien ut sapien gravida sollicitudin</li>
-                                        <li>Mauris vel nisl quis dolor accumsan luctus</li>
+                                        <li>Launching Beta Version of platform token generation</li>
+                                        <li>Platform Scalability Testing</li>
+                                        <li>Fixing bugs and adjusting the platform based on beta user feedback.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -63,11 +63,9 @@ function Roadmap(props) {
                                     <img src={icon} alt="" />
                                 </div>
                                 <div className="content">
-                                    <h6 className="date">April 16, 2022</h6>
+                                    <h6 className="date">Phase 6</h6>
                                     <ul>
-                                        <li>Cras molestie ullamcorper augue nec pulvinar</li>
-                                        <li>Nam mollis sapien ut sapien gravida sollicitudin</li>
-                                        <li>Mauris vel nisl quis dolor accumsan luctus</li>
+                                        <li>Coming soon</li>
                                     </ul>
                                 </div>
                             </div>
@@ -78,11 +76,11 @@ function Roadmap(props) {
                                     <img src={icon} alt="" />
                                 </div>
                                 <div className="content">
-                                    <h6 className="date">April 16, 2022</h6>
+                                    <h6 className="date">Phase 2</h6>
                                     <ul>
-                                        <li>Cras molestie ullamcorper augue nec pulvinar</li>
-                                        <li>Nam mollis sapien ut sapien gravida sollicitudin</li>
-                                        <li>Mauris vel nisl quis dolor accumsan luctus</li>
+                                        <li>Auditing $eFUN to increase holder trust</li>
+                                        <li>Accelerating community expansion through user engagement marketing campaigns</li>
+                                        <li>Listing on CMC, CG, and other Decentralized Exchanges</li>
                                     </ul>
                                 </div>
                             </div>
@@ -91,34 +89,20 @@ function Roadmap(props) {
                                     <img src={icon} alt="" />
                                 </div>
                                 <div className="content">
-                                    <h6 className="date">April 16, 2022</h6>
+                                <h6 className="date">Phase 4</h6>
                                     <ul>
-                                        <li>Cras molestie ullamcorper augue nec pulvinar</li>
-                                        <li>Nam mollis sapien ut sapien gravida sollicitudin</li>
-                                        <li>Mauris vel nisl quis dolor accumsan luctus</li>
+                                        <li>More network integrations on the $eFUN Platform</li>
+                                        <li>Partnerships to increase user demand</li>
+                                        <li>Platform & Infrastructure Development</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div className="roadmap-box-style">
-                                <div className="icon">
-                                    <img src={icon} alt="" />
-                                </div>
-                                <div className="content">
-                                    <h6 className="date">April 16, 2022</h6>
-                                    <ul>
-                                        <li>Cras molestie ullamcorper augue nec pulvinar</li>
-                                        <li>Nam mollis sapien ut sapien gravida sollicitudin</li>
-                                        <li>Mauris vel nisl quis dolor accumsan luctus</li>
-                                    </ul>
-                                </div>
-                            </div> 
                         </div>
                     </div>
                 </div> 
             </div>
         </div>
     </section>
-            {/* {<CTA />} */}
             
         </div>
     );
