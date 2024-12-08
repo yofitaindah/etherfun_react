@@ -2,33 +2,16 @@ import React from 'react';
 
 import Banner from '../components/banner/banner_v2';
 import dataBanner from '../assets/fake-data/data-banner';
-import Featured from '../components/featured';
-import dataFeatured from '../assets/fake-data/data-feature';
-import Project5 from '../components/project/project_v5';
+import HotPairs from '../components/project/hot_pairs';
 import dataProject from '../assets/fake-data/data-project';
 import ProjectList from './ProjectList';
-import blog from '../pages/BlogList';
-import blog2 from '../pages/BlogList';
 // import Tier from '../components/tier';
-import dataTier from '../assets/fake-data/data-tier';
-import Technology from '../components/technology';
-import dataPartner from '../assets/fake-data/data-partner';
-import Roadmap from '../components/roadmap';
-import dataRoadmap from '../assets/fake-data/data-roadmap';
-import Project6 from '../components/project/project_v6';
-
-import Partner2 from '../components/partner/index2';
-import Faqs from '../components/faqs';
-import dataFaq from '../assets/fake-data/data-faqs';
-import Token2 from '../components/token/Token2';
-import dataToken from '../assets/fake-data/data-token';
-import Team from '../components/team';
-import dataTeam from '../assets/fake-data/data-team';
-import CTA2 from '../components/cta/CTA2';
-import CTA from '../components/cta';
-import BlogList from '../pages/BlogList';
 
 function HomeTwo(props) {
+
+    console.log(process.env.REACT_APP_API_URL); // Output: https://api.example.com
+console.log(process.env.REACT_APP_SECRET_KEY); // Output: your-secret-key
+
     return (
         <div className='header-fixed main home2 counter-scroll'>
        
@@ -45,7 +28,7 @@ function HomeTwo(props) {
                 </div>
 
             
-                {<Project5 data={dataProject} />}
+                {<HotPairs data={dataProject} />}
 
                 {<ProjectList/>}
 

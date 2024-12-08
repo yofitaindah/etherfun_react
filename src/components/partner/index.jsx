@@ -33,7 +33,7 @@ function Partner(props) {
                             <div className="partner-wrapper" data-aos="fade-up" data-aos-duration="800">
                                 {
                                     data.map(idx => (
-                                        <Link key={idx.id} to="/home_v2" className="image">
+                                        <Link key={idx.id} to="/" className="image">
                                             <img src={idx.img} alt="" />
                                         </Link>
                                     ))
