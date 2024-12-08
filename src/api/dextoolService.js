@@ -4,9 +4,8 @@ import axiosInstanceDextools from "./axiosDextools";
 // curl -X GET "https://public-api.dextools.io/trial/v2/blockchain?sort=name&order=asc&page=0&pageSize=10" \
 //  -H "accept: application/json"\
 //  -H "x-api-key: cLobf4KI8U2zWZbkecXsr88APaXZTGSc9jOBjbIQ" \
-
 export const getBlockChain = async (page = 0, pageSize = 10) => {
-  const currentPage = page == 1 ? 0 : page;
+  const currentPage = page === 1 ? 0 : page;
   const url = `blockchain?sort=name&order=asc&page=${currentPage}&pageSize=${pageSize}`;
   try {
     const response = await axiosInstanceDextools.get(url);
@@ -21,7 +20,7 @@ export const getBlockChain = async (page = 0, pageSize = 10) => {
 export const getPoolChain = async (
   chain = "ether",
   sort = "creationTime",
-  order = 0,
+  order = "asc",
   from,
   to,
   page = 0,
@@ -31,8 +30,8 @@ export const getPoolChain = async (
   const d2 = new Date(new Date().setMonth(new Date().getMonth() - 3));
   const fromDateTime = d2.toISOString();
   const toDateTime = d.toISOString();
-
-  const url = `/pool/${chain}?sort=${sort}&order=${order}&from=${fromDateTime}&to=${toDateTime}&page=${page}&pageSize=${pageSize}`;
+  const currentPage = page === 1 ? 0 : page;
+  const url = `/pool/${chain}?sort=${sort}&order=${order}&from=${fromDateTime}&to=${toDateTime}&page=${currentPage}&pageSize=${pageSize}`;
   try {
     const response = await axiosInstanceDextools.get(url);
     return response.data;
