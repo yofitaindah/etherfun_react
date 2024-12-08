@@ -58,7 +58,7 @@ function Roadmap(props) {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="roadmap-box-style">
+                            {/* <div className="roadmap-box-style">
                                 <div className="icon">
                                     <img src={icon} alt="" />
                                 </div>
@@ -68,7 +68,7 @@ function Roadmap(props) {
                                         <li>Coming soon</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="right">
                             <div className="roadmap-box-style active">
