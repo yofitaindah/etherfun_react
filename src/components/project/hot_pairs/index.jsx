@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Grid } from "swiper";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { getHotpoolsChain } from "../../../api/dextoolService";
 
-Project5.propTypes = {
-  data: PropTypes.array,
-};
-
-function Project5(props) {
+const HotPairs = (props) => {
   const { data } = props;
+  const [items, setItems] = useState(null);
+  const [error, setError] = useState(null);
 
   const [dataTab] = useState([
     {
@@ -22,6 +21,40 @@ function Project5(props) {
   const [dataTitle] = useState({
     title: "projects we recommend",
   });
+
+  useEffect(() => {
+    let interval = setInterval(async () => {
+      const items = await getHotpoolsChain();
+      setItems(items);
+    }, 30000); // 30seconds
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  // useEffect(() => {
+  //   const fetchApi = async () => {
+  //     try {
+  //       const items = await getHotpoolsChain();
+        
+  //       console.log('Items', items);
+  //       setItems(items);
+  //     } catch (err) {
+  //       setError(err.message);
+  //     }
+  //   };
+
+  //   // Call the API immediately
+  //   fetchApi();
+
+  //   // Set up the interval
+  //   const interval = setInterval(fetchApi, 60000); // 1 minute = 60000ms
+
+  //   // Cleanup the interval on component unmount
+  //   return () => clearInterval(interval);
+  // }, []);
+
+
   return (
     <section className="tf-section project_2">
       <div className="container w_1280">
@@ -71,8 +104,8 @@ function Project5(props) {
                           rows: 1,
                         }}
                       >
-                        {data.slice(6, 10).map((item) => (
-                          <SwiperSlide key={item.id}>
+                        {items && items.length && items.map((item) => (
+                          <SwiperSlide key={item.address}>
                             <div className="project-box-style4">
                               <div className="image">
                                 <div className="img_inner">
@@ -87,7 +120,7 @@ function Project5(props) {
                               </div>
                               <div className="content">
                                 <h5 className="heading">
-                                  <Link to="/project_v1">{item.title}</Link>
+                                  <Link to="/project_v1">{item.mainToken.name} / {item.sideToken.symbol}</Link>
                                 </h5>
                                 <p className="desc">{item.desc}</p>
                                 <ul>
@@ -119,6 +152,10 @@ function Project5(props) {
       </div>
     </section>
   );
-}
+};
 
-export default Project5;
+HotPairs.propTypes = {
+  data: PropTypes.array,
+};
+
+export default HotPairs;
