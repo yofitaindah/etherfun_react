@@ -4,13 +4,16 @@ import CTA from '../components/cta';
 import PageTitle from '../components/pagetitle';
 import { Link } from 'react-router-dom';
 
+import Team from '../components/team';
+import dataTeam from '../assets/fake-data/data-team';
+
 
 function TeamDetails(props) {
     return (
         <div className='inner-page'>
             {<PageTitle title='Team Details' />}
 
-            <section className="tf-section tf-team-details pt60">
+            {/* <section className="tf-section tf-team-details pt60">
         <div className="container">
             <div className="row"> 
                 <div className="col-md-12">
@@ -93,8 +96,9 @@ function TeamDetails(props) {
                 </div> 
             </div>
         </div>
-    </section>
+    </section> */}
 
+            {<Team data={dataTeam} />}
             {/* {<CTA />} */}
             
         </div>

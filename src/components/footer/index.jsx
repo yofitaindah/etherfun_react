@@ -67,9 +67,9 @@ function Footer(props) {
                             Support
                         </h5>
                         <ul className="widget-link">
-                            <li>
+                            {/* <li>
                                 <Link to="/connect">Connect Wallet</Link>
-                            </li>
+                            </li> */}
                             {/* <li>
                                 <Link to="/forgetPass">Forget Password</Link>
                             </li> */}
