@@ -114,7 +114,7 @@ function Footer(props) {
                     </div>
                     <ul className="social">
                         <li>
-                            <Link to="#">
+                            <Link to="https://x.com/ether_fun">
                                 <img
                                     src={TwitterIcon}
                                     alt="Dextool Icon"
@@ -124,7 +124,7 @@ function Footer(props) {
                             </Link>
                         </li>
                         <li>
-                            <Link to="#">
+                            <Link to="https://t.me/etherfunentry">
                                 <img
                                     src={TelegramIcon}
                                     alt="Dextool Icon"
