@@ -7,16 +7,21 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 import Countdown from "../countdown";
 import PageTitle from "../pagetitle";
-import DextoolIcon from '../../assets/images/logo_dextool.svg'
-import EtherscanIcon from '../../assets/images/logo_etherscan.svg'
-import TelegramIcon from '../../assets/images/logo_telegram.svg'
-import TwitterIcon from '../../assets/images/logo_twitter.svg'
-import WebsiteIcon from '../../assets/images/logo_website3.png'
+import DextoolIcon from "../../assets/images/logo_dextool.svg";
+import EtherscanIcon from "../../assets/images/logo_etherscan.svg";
+import TelegramIcon from "../../assets/images/logo_telegram.svg";
+import TwitterIcon from "../../assets/images/logo_twitter.svg";
+import WebsiteIcon from "../../assets/images/logo_website3.png";
 
 const ServerPagination = ({ fetchData, totalPages }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  const generateInitial = (name) => {
+    const parts = name.split(" ")[0];
+    return parts.substr(0, 1);
+  };
 
   const loadPage = async (page) => {
     setLoading(true);
@@ -106,16 +111,20 @@ const ServerPagination = ({ fetchData, totalPages }) => {
                             className="project-box-style3"
                             data-aos="fade-in"
                             data-aos-duration="800"
+                            style={{
+                              cursor: "pointer",
+                            }}
+                            onClick={() => {
+                              const now = Date.now();
+                              window.open(
+                                `https://www.dextools.io/app/en/ether/pair-explorer/${item.address}?t=${now}`,
+                                "_blank"
+                              );
+                            }}
                           >
                             <div className="header_project">
-                              <div className="image">
-                                <img className="mask" src={item.img} alt="" />
-                                <div className="shape">
-                                  <img
-                                    src={require("../../assets/images/common/shape_2.png")}
-                                    alt=""
-                                  />
-                                </div>
+                              <div className="image" style={{display: "flex", position: 'unset', alignItems: 'center', justifyContent: 'center', borderRadius: '10px'}}>
+                                <h2>{generateInitial(item.mainToken.name)}</h2>
                               </div>
                               <h5 className="heading">
                                 <Link to="/project_list">
@@ -201,45 +210,45 @@ const ServerPagination = ({ fetchData, totalPages }) => {
                                     </Link>
                                   </li> */}
                                   <li>
-                                          <Link to="#">
-                                              <img
-                                                  src={TwitterIcon}
-                                                  alt="Dextool Icon"
-                                                  width="18"
-                                                  height="18"
-                                              />
-                                          </Link>
-                                      </li>
-                                      <li>
-                                          <Link to="#">
-                                              <img
-                                                  src={TelegramIcon}
-                                                  alt="Dextool Icon"
-                                                  width="18"
-                                                  height="18"
-                                              />
-                                          </Link>
-                                      </li>
-                                      <li>
-                                          <Link to="#">
-                                              <img
-                                                  src={WebsiteIcon}
-                                                  alt="Website Icon"
-                                                  width="18"
-                                                  height="18"
-                                              />
-                                          </Link>
-                                      </li>
-                                      <li>
-                                          <Link to="#">
-                                              <img
-                                                  src={EtherscanIcon}
-                                                  alt="Etherscan Icon"
-                                                  width="18"
-                                                  height="18"
-                                              />
-                                          </Link>
-                                      </li>
+                                    <Link to="#">
+                                      <img
+                                        src={TwitterIcon}
+                                        alt="Dextool Icon"
+                                        width="18"
+                                        height="18"
+                                      />
+                                    </Link>
+                                  </li>
+                                  <li>
+                                    <Link to="#">
+                                      <img
+                                        src={TelegramIcon}
+                                        alt="Dextool Icon"
+                                        width="18"
+                                        height="18"
+                                      />
+                                    </Link>
+                                  </li>
+                                  <li>
+                                    <Link to="#">
+                                      <img
+                                        src={WebsiteIcon}
+                                        alt="Website Icon"
+                                        width="18"
+                                        height="18"
+                                      />
+                                    </Link>
+                                  </li>
+                                  <li>
+                                    <Link to="#">
+                                      <img
+                                        src={EtherscanIcon}
+                                        alt="Etherscan Icon"
+                                        width="18"
+                                        height="18"
+                                      />
+                                    </Link>
+                                  </li>
                                   {/* <li>
                                     <Link to="#">
                                       <svg
@@ -323,100 +332,98 @@ const ServerPagination = ({ fetchData, totalPages }) => {
                 </Tabs>
               </div>
             </div>
-              <div className="col-md-12 mt-6">
-                <ul
-                  className="panigation mt6"
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                >
-                  <li>
-                    <Link
-                      to="#"
-                      onClick={() =>
-                        currentPage > 1 && setCurrentPage(currentPage - 1)
-                      }
-                      className={`${currentPage === 1 ? "disabled" : ""}`}
-                      style={{
-                        cursor: currentPage === 1 ? "not-allowed" : "pointer",
-                      }}
+            <div className="col-md-12 mt-6">
+              <ul
+                className="panigation mt6"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <li>
+                  <Link
+                    to="#"
+                    onClick={() =>
+                      currentPage > 1 && setCurrentPage(currentPage - 1)
+                    }
+                    className={`${currentPage === 1 ? "disabled" : ""}`}
+                    style={{
+                      cursor: currentPage === 1 ? "not-allowed" : "pointer",
+                    }}
+                  >
+                    <svg
+                      width="8"
+                      height="12"
+                      viewBox="0 0 8 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        width="8"
-                        height="12"
-                        viewBox="0 0 8 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <path
+                        d="M6.5 1L1.5 6L6.5 11"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </Link>
+                </li>
+                {renderPageNumbers().map((page, index) =>
+                  page === "..." ? (
+                    <li>
+                      <span key={index} className="dots">
+                        ...
+                      </span>
+                    </li>
+                  ) : (
+                    <li key={page} onClick={() => loadPage(page)}>
+                      <Link
+                        to="#"
+                        className={
+                          page === currentPage ||
+                          (page === 1 && currentPage === 0)
+                            ? "active"
+                            : ""
+                        }
                       >
-                        <path
-                          d="M6.5 1L1.5 6L6.5 11"
-                          stroke="white"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </Link>
-                  </li>
-                  {renderPageNumbers().map((page, index) =>
-                    page === "..." ? (
-                      <li>
-                        <span key={index} className="dots">
-                          ...
-                        </span>
-                      </li>
-                    ) : (
-                      <li key={page} onClick={() => loadPage(page)}>
-                        <Link
-                          to="#"
-                          className={
-                            page === currentPage ||
-                            (page === 1 && currentPage === 0)
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          {page}
-                        </Link>
-                      </li>
-                    )
-                  )}
-                  <li>
-                    <Link
-                      to="#"
-                      onClick={() =>
-                        currentPage < totalPages &&
-                        setCurrentPage(currentPage + 1)
-                      }
-                      className={`${
-                        currentPage === totalPages ? "disabled" : ""
-                      }`}
-                      style={{
-                        cursor:
-                          currentPage === totalPages
-                            ? "not-allowed"
-                            : "pointer",
-                      }}
+                        {page}
+                      </Link>
+                    </li>
+                  )
+                )}
+                <li>
+                  <Link
+                    to="#"
+                    onClick={() =>
+                      currentPage < totalPages &&
+                      setCurrentPage(currentPage + 1)
+                    }
+                    className={`${
+                      currentPage === totalPages ? "disabled" : ""
+                    }`}
+                    style={{
+                      cursor:
+                        currentPage === totalPages ? "not-allowed" : "pointer",
+                    }}
+                  >
+                    <svg
+                      width="8"
+                      height="12"
+                      viewBox="0 0 8 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        width="8"
-                        height="12"
-                        viewBox="0 0 8 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1.5 1L6.5 6L1.5 11"
-                          stroke="white"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+                      <path
+                        d="M1.5 1L6.5 6L1.5 11"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </Link>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
       </section>
     </div>
