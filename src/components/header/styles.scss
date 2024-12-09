@@ -117,7 +117,7 @@
             position: relative;
             display: block;
             color: $white;
-            padding-right: 15px;
+            padding-right: 0px;
             padding-top: 20px;
             padding-bottom: 20px;    
             line-height: 1.5; 
@@ -142,7 +142,7 @@
             position: absolute;
             font-family: "Font Awesome 5 Pro";
             content: '\f078';
-            right: 0;
+            right: -13px;
             top: 50%;
             font-weight: 400;
             -webkit-transform: translateY(-50%);

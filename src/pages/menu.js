@@ -86,6 +86,16 @@ const menus = [
     },
     {
         id: 5,
+        name: 'Trading Bot AI',
+        links: '/',
+    },
+    {
+        id: 6,
+        name: 'Farm',
+        links: '/',
+    },
+    {
+        id: 7,
         name: 'Create Token',
         links: '/project_submit',
     },

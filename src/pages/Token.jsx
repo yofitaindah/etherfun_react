@@ -3,6 +3,7 @@ import React from 'react';
 import PageTitle from '../components/pagetitle';
 import CTA from '../components/cta';
 import { Chart } from '../components/token/Chart';
+import LogoEtherfun from '../assets/images/common/icon_ether.png';
 
 
 function Token(props) {
@@ -16,55 +17,55 @@ function Token(props) {
                         <div className="col-lg-6 col-md-6">
                             <div className="tf-title left mb40" data-aos-delay="500" data-aos="fade-up" data-aos-duration="800">
                                 <h2 className="title">
-                                    Statistics Token Etherfun
+                                    Token Etherfun
                                 </h2>
                             </div>
                             <div className="desc-token" data-aos-delay="500" data-aos="fade-up" data-aos-duration="800">
                                 <div className="total-token">
-                                    <p>Total Supply: <span>XXX.XXX.XXX</span></p>
+                                    <p>Contract Address: <span>XXXXXXXXX</span></p>
                                     {/* <p>Public sale: <span> $0.24</span></p> */}
                                 </div>
                                 <ul className="describe_chart">
                                     <li>
                                         <img src={require ("../assets/images/chart/color_1.png")} alt="" />
                                         <div className="desc">
-                                            <p className="name">Liquidity</p>
-                                            <p className="number">27.3%</p>
+                                            <p className="name">Name</p>
+                                            <p className="number">Etherfun</p>
                                         </div>
                                     </li>
                                     <li>
                                         <img src={require ("../assets/images/chart/color_2.png")} alt="" />
                                         <div className="desc">
-                                            <p className="name">Staking</p>
-                                            <p className="number">15.3%</p>
+                                            <p className="name">Ticker</p>
+                                            <p className="number">eFUN</p>
                                         </div>
                                     </li>
                                     <li>
                                         <img src={require ("../assets/images/chart/color_3.png")} alt="" />
                                         <div className="desc">
-                                            <p className="name">Marketing</p>
-                                            <p className="number">7.5%</p>
+                                            <p className="name">Total Supply</p>
+                                            <p className="number">xxx.xxx.xxx</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <img src={require ("../assets/images/chart/color_4.png")} alt="" />
                                         <div className="desc">
                                             <p className="name">CEX</p>
                                             <p className="number">7.03%</p>
                                         </div>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <img src={require ("../assets/images/chart/color_5.png")} alt="" />
                                         <div className="desc">
                                             <p className="name">Tax Buy</p>
-                                            <p className="number">23.45%</p>
+                                            <p className="number">4%</p>
                                         </div>
                                     </li>
                                     <li>
                                         <img src={require ("../assets/images/chart/color_6.png")} alt="" />
                                         <div className="desc">
                                             <p className="name">Tax Sell</p>
-                                            <p className="number">13.3%</p>
+                                            <p className="number">4%</p>
                                         </div>
                                     </li>
                                     {/* <li>
@@ -87,7 +88,17 @@ function Token(props) {
                         <div className="col-lg-6 col-md-6">
                             <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
                                 <div id="chart">
-                                <Chart />
+                                {/* <Chart /> */}
+                                <img
+                                    src={LogoEtherfun}
+                                    alt=""
+                                    style={{
+                                        width: "150px",
+                                        height: "auto",
+                                        maxWidth: "100%",
+                                        maxHeight: "150px",
+                                    }}
+                                />
                                 </div>
                             </div>
                         

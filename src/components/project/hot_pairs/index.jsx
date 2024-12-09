@@ -124,7 +124,7 @@ const HotPairs = (props) => {
                                       generateInitial(item.mainToken.name)
                                     }
                                   </div>
-                                  <div className="label">1ST Phase</div>
+                                  {/* <div className="label">1ST Phase</div> */}
                                 </div>
                                 <div className="content">
                                   <h5 className="heading">
@@ -136,15 +136,15 @@ const HotPairs = (props) => {
                                   <p className="desc">{item.desc}</p>
                                   <ul>
                                     <li>
-                                      <p className="text">Min allocation</p>
+                                      <p className="text">Marketcap</p>
                                       <p className="price">{item.price_1}</p>
                                     </li>
                                     <li>
-                                      <p className="text">Maximum</p>
+                                      <p className="text">Holders</p>
                                       <p className="price">{item.price_2}</p>
                                     </li>
                                     <li>
-                                      <p className="text">Access</p>
+                                      <p className="text">Liquidity</p>
                                       <p className="price">{item.price_3}</p>
                                     </li>
                                   </ul>

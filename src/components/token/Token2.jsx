@@ -27,7 +27,7 @@ function Token2(props) {
                                 {dataTitle.title}
                             </h2>
                             <div className="total_token">
-                                <h6>Total Supply: <span>xxxx</span></h6>
+                                <h6>Contract Address: <span>xxxx</span></h6>
                             </div>
                         </div>
                     </div>
