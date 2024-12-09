@@ -11,7 +11,7 @@ import DextoolIcon from '../../assets/images/logo_dextool.svg'
 import EtherscanIcon from '../../assets/images/logo_etherscan.svg'
 import TelegramIcon from '../../assets/images/logo_telegram.svg'
 import TwitterIcon from '../../assets/images/logo_twitter.svg'
-import WebsiteIcon from '../../assets/images/logo_website.png'
+import WebsiteIcon from '../../assets/images/logo_website3.png'
 
 const ServerPagination = ({ fetchData, totalPages }) => {
   const [currentPage, setCurrentPage] = useState(1);
