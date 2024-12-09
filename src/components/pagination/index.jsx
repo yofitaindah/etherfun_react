@@ -7,6 +7,11 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 import Countdown from "../countdown";
 import PageTitle from "../pagetitle";
+import DextoolIcon from '../../assets/images/logo_dextool.svg'
+import EtherscanIcon from '../../assets/images/logo_etherscan.svg'
+import TelegramIcon from '../../assets/images/logo_telegram.svg'
+import TwitterIcon from '../../assets/images/logo_twitter.svg'
+import WebsiteIcon from '../../assets/images/logo_website.png'
 
 const ServerPagination = ({ fetchData, totalPages }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -122,11 +127,11 @@ const ServerPagination = ({ fetchData, totalPages }) => {
                             <div className="content">
                               <div className="td td1">
                                 <p>Total raise</p>
-                                <p>$3970</p>
+                                <p>-</p>
                               </div>
                               <div className="td td2">
                                 <p>Price</p>
-                                <p>0.05 USDT</p>
+                                <p>-</p>
                               </div>
                               <div className="td td3">
                                 <p>Chain</p>
@@ -172,14 +177,14 @@ const ServerPagination = ({ fetchData, totalPages }) => {
                                 </p>
                               </div>
                               <div className="td td4">
-                                <p>Next claim in</p>
+                                {/* <p>Next claim in</p>
                                 <div className="featured-countdown style3">
                                   {<Countdown />}
-                                </div>
+                                </div> */}
                               </div>
                               <div className="td td5">
                                 <ul className="social">
-                                  <li>
+                                  {/* <li>
                                     <Link to="#">
                                       <svg
                                         width="22"
@@ -194,8 +199,48 @@ const ServerPagination = ({ fetchData, totalPages }) => {
                                         />
                                       </svg>
                                     </Link>
-                                  </li>
+                                  </li> */}
                                   <li>
+                                          <Link to="#">
+                                              <img
+                                                  src={TwitterIcon}
+                                                  alt="Dextool Icon"
+                                                  width="18"
+                                                  height="18"
+                                              />
+                                          </Link>
+                                      </li>
+                                      <li>
+                                          <Link to="#">
+                                              <img
+                                                  src={TelegramIcon}
+                                                  alt="Dextool Icon"
+                                                  width="18"
+                                                  height="18"
+                                              />
+                                          </Link>
+                                      </li>
+                                      <li>
+                                          <Link to="#">
+                                              <img
+                                                  src={WebsiteIcon}
+                                                  alt="Website Icon"
+                                                  width="18"
+                                                  height="18"
+                                              />
+                                          </Link>
+                                      </li>
+                                      <li>
+                                          <Link to="#">
+                                              <img
+                                                  src={EtherscanIcon}
+                                                  alt="Etherscan Icon"
+                                                  width="18"
+                                                  height="18"
+                                              />
+                                          </Link>
+                                      </li>
+                                  {/* <li>
                                     <Link to="#">
                                       <svg
                                         width="22"
@@ -234,8 +279,8 @@ const ServerPagination = ({ fetchData, totalPages }) => {
                                         />
                                       </svg>
                                     </Link>
-                                  </li>
-                                  <li>
+                                  </li> */}
+                                  {/* <li>
                                     <Link to="#">
                                       <svg
                                         width="18"
@@ -266,7 +311,7 @@ const ServerPagination = ({ fetchData, totalPages }) => {
                                         />
                                       </svg>
                                     </Link>
-                                  </li>
+                                  </li> */}
                                 </ul>
                               </div>
                             </div>

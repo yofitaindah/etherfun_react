@@ -51,11 +51,11 @@ function Project4(props) {
                                             <div className="content">
                                                 <div className="td td1">
                                                     <p>Total raise</p>
-                                                    <p >$3970</p>
+                                                    <p >-</p>
                                                 </div>
                                                 <div className="td td2">
                                                     <p>Price</p>
-                                                    <p >0.05 USDT</p>
+                                                    <p >-</p>
                                                 </div>
                                                 <div className="td td3">
                                                     <p>Chain</p>
