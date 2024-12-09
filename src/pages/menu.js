@@ -59,7 +59,7 @@ const menus = [
         namesub: [
             {
                 id: 1,
-                sub: 'Token',
+                sub: 'Tokenomics',
                 links: '/token'
             },
             {

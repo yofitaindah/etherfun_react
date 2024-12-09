@@ -12,26 +12,22 @@ const dataTeam = [
     {
         id: 1,
         img : img1,
-        name: 'Darrell Steward',
-        unit: 'Senior Designer'
+        name: 'Darrell Steward'
     }, 
     {
         id: 2,
         img : img2,
-        name: 'Kristin Watson',
-        unit: 'Senior Designer'
+        name: 'Kristin Watson'
     }, 
     {
         id: 3,
         img : img3,
-        name: 'Jacob Jones',
-        unit: 'Senior Designer'
+        name: 'Jacob Jones'
     }, 
     {
         id: 4,
         img : img4,
-        name: 'Jane Cooper',
-        unit: 'Senior Designer'
+        name: 'Jane Cooper'
     }, 
 ]
 
