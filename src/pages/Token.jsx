@@ -1,74 +1,98 @@
-import React from 'react';
+import React from "react";
 
-import PageTitle from '../components/pagetitle';
-import CTA from '../components/cta';
-import { Chart } from '../components/token/Chart';
-import LogoEtherfun from '../assets/images/common/icon_ether.png';
-
+import PageTitle from "../components/pagetitle";
+import CTA from "../components/cta";
+import { Chart } from "../components/token/Chart";
+import LogoEtherfun from "../assets/images/common/icon_ether.png";
 
 function Token(props) {
-    return (
-        <div className='inner-page'>
-            {<PageTitle title='Token' />}
+  return (
+    <div className="inner-page">
+      {<PageTitle title="Token" />}
 
-            <section className="tf-section tf-token pt60">
-                <div className="container">
-                    <div className="row">  
-                        <div className="col-lg-6 col-md-6">
-                            <div className="tf-title left mb40" data-aos-delay="500" data-aos="fade-up" data-aos-duration="800">
-                                <h2 className="title">
-                                    Token Etherfun
-                                </h2>
-                            </div>
-                            <div className="desc-token" data-aos-delay="500" data-aos="fade-up" data-aos-duration="800">
-                                <div className="total-token">
-                                    <p>Contract Address: <span>XXXXXXXXX</span></p>
-                                    {/* <p>Public sale: <span> $0.24</span></p> */}
-                                </div>
-                                <ul className="describe_chart">
-                                    <li>
-                                        <img src={require ("../assets/images/chart/color_1.png")} alt="" />
-                                        <div className="desc">
-                                            <p className="name">Name</p>
-                                            <p className="number">Etherfun</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src={require ("../assets/images/chart/color_2.png")} alt="" />
-                                        <div className="desc">
-                                            <p className="name">Ticker</p>
-                                            <p className="number">eFUN</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src={require ("../assets/images/chart/color_3.png")} alt="" />
-                                        <div className="desc">
-                                            <p className="name">Total Supply</p>
-                                            <p className="number">xxx.xxx.xxx</p>
-                                        </div>
-                                    </li>
-                                    {/* <li>
+      <section className="tf-section tf-token pt60">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-6">
+              <div
+                className="tf-title left mb40"
+                data-aos-delay="500"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <h2 className="title">Token Etherfun</h2>
+              </div>
+              <div
+                className="desc-token"
+                data-aos-delay="500"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <div className="total-token">
+                  <p>
+                    Contract Address: <span>XXXXXXXXX</span>
+                  </p>
+                  {/* <p>Public sale: <span> $0.24</span></p> */}
+                </div>
+                <ul className="describe_chart">
+                  <li>
+                    <img
+                      src={require("../assets/images/chart/color_1.png")}
+                      alt=""
+                    />
+                    <div className="desc">
+                      <p className="name">Name</p>
+                      <p className="number">Etherfun</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img
+                      src={require("../assets/images/chart/color_2.png")}
+                      alt=""
+                    />
+                    <div className="desc">
+                      <p className="name">Ticker</p>
+                      <p className="number">eFUN</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img
+                      src={require("../assets/images/chart/color_3.png")}
+                      alt=""
+                    />
+                    <div className="desc">
+                      <p className="name">Total Supply</p>
+                      <p className="number">xxx.xxx.xxx</p>
+                    </div>
+                  </li>
+                  {/* <li>
                                         <img src={require ("../assets/images/chart/color_4.png")} alt="" />
                                         <div className="desc">
                                             <p className="name">CEX</p>
                                             <p className="number">7.03%</p>
                                         </div>
                                     </li> */}
-                                    <li>
-                                        <img src={require ("../assets/images/chart/color_5.png")} alt="" />
-                                        <div className="desc">
-                                            <p className="name">Tax Buy</p>
-                                            <p className="number">4%</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src={require ("../assets/images/chart/color_6.png")} alt="" />
-                                        <div className="desc">
-                                            <p className="name">Tax Sell</p>
-                                            <p className="number">4%</p>
-                                        </div>
-                                    </li>
-                                    {/* <li>
+                  <li>
+                    <img
+                      src={require("../assets/images/chart/color_5.png")}
+                      alt=""
+                    />
+                    <div className="desc">
+                      <p className="name">Tax Buy</p>
+                      <p className="number">4%</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img
+                      src={require("../assets/images/chart/color_6.png")}
+                      alt=""
+                    />
+                    <div className="desc">
+                      <p className="name">Tax Sell</p>
+                      <p className="number">4%</p>
+                    </div>
+                  </li>
+                  {/* <li>
                                         <img src={require ("../assets/images/chart/color_7.png")} alt="" />
                                         <div className="desc">
                                             <p className="name">Marketing</p>
@@ -82,28 +106,30 @@ function Token(props) {
                                             <p className="number">5.3%</p>
                                         </div>
                                     </li> */}
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-6">
-                            <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="800">
-                                <div id="chart">
-                                {/* <Chart /> */}
-                                <img
-                                    src={LogoEtherfun}
-                                    alt=""
-                                    style={{
-                                        width: "150px",
-                                        height: "auto",
-                                        maxWidth: "100%",
-                                        maxHeight: "150px",
-                                    }}
-                                />
-                                </div>
-                            </div>
-                        
-                        </div>
-                        {/* <div className="col-md-12">
+                </ul>
+              </div>
+            </div>
+            <div
+              className="col-lg-6 col-md-6 d-flex justify-content-center align-items-center"
+            >
+              <div
+                data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="800"
+              >
+                <div id="chart">
+                  <img
+                    src={LogoEtherfun}
+                    alt="Logo Ether fun"
+                    style={{
+                      width: "320px",
+                      height: "320px",
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+            {/* <div className="col-md-12">
                             <div className="tf-title left mt17 mb40" data-aos="fade-up" data-aos-duration="800">
                                 <h2 className="title">
                                     Tokenomics
@@ -273,15 +299,14 @@ function Token(props) {
                                     </div>
                                 </div>
                             </div> */}
-                        {/* </div> */}
-                    </div>
-                </div>
-            </section>
-
-            {/* {<CTA />} */}
-            
+            {/* </div> */}
+          </div>
         </div>
-    );
+      </section>
+
+      {/* {<CTA />} */}
+    </div>
+  );
 }
 
 export default Token;
