@@ -23,37 +23,25 @@ const HotPairs = (props) => {
   });
 
   useEffect(() => {
-    let interval = setInterval(async () => {
+    // let interval = setInterval(async () => {
+    //   const items = await getHotpoolsChain();
+    //   setItems(items);
+    // }, 30000); // 30seconds
+    // return () => {
+    //   clearInterval(interval);
+    // };
+
+    const fetchApi = async () => {
       const items = await getHotpoolsChain();
       setItems(items);
-    }, 30000); // 30seconds
-    return () => {
-      clearInterval(interval);
     };
+    fetchApi();
   }, []);
 
-  // useEffect(() => {
-  //   const fetchApi = async () => {
-  //     try {
-  //       const items = await getHotpoolsChain();
-        
-  //       console.log('Items', items);
-  //       setItems(items);
-  //     } catch (err) {
-  //       setError(err.message);
-  //     }
-  //   };
-
-  //   // Call the API immediately
-  //   fetchApi();
-
-  //   // Set up the interval
-  //   const interval = setInterval(fetchApi, 60000); // 1 minute = 60000ms
-
-  //   // Cleanup the interval on component unmount
-  //   return () => clearInterval(interval);
-  // }, []);
-
+  const generateInitial = (name) => {
+    const parts = name.split(" ")[0];
+    return parts.substr(0, 1);
+  };
 
   return (
     <section className="tf-section project_2">
@@ -104,43 +92,66 @@ const HotPairs = (props) => {
                           rows: 1,
                         }}
                       >
-                        {items && items.length && items.map((item) => (
-                          <SwiperSlide key={item.address}>
-                            <div className="project-box-style4">
-                              <div className="image">
-                                <div className="img_inner">
-                                  <img src={item.img} alt="" />
-                                  <img
-                                    className="shape"
-                                    src={require("../../../assets/images/common/shape.png")}
-                                    alt="Risebot"
-                                  />
+                        {items &&
+                          items.length &&
+                          items.map((item) => (
+                            <SwiperSlide key={item.address}>
+                              <div
+                                className="project-box-style4"
+                                style={{
+                                  cursor: "pointer",
+                                }}
+                                onClick={() => {
+                                  const now = Date.now();
+                                  window.open(
+                                    `https://www.dextools.io/app/en/ether/pair-explorer/${item.address}?t=${now}`,
+                                    "_blank"
+                                  );
+                                }}
+                              >
+                                <div className="image">
+                                  <div
+                                    className="img_inner"
+                                    style={{ borderRadius: "10px" }}
+                                  >
+                                    <img src={item.img} alt="" />
+                                    <img
+                                      className="shape"
+                                      src={require("../../../assets/images/common/shape.png")}
+                                      alt="Risebot"
+                                    />
+                                    {
+                                      generateInitial(item.mainToken.name)
+                                    }
+                                  </div>
+                                  <div className="label">1ST Phase</div>
                                 </div>
-                                <div className="label">1ST Phase</div>
+                                <div className="content">
+                                  <h5 className="heading">
+                                    <Link to="/project_v1">
+                                      {item.mainToken.name} /{" "}
+                                      {item.sideToken.symbol}
+                                    </Link>
+                                  </h5>
+                                  <p className="desc">{item.desc}</p>
+                                  <ul>
+                                    <li>
+                                      <p className="text">Min allocation</p>
+                                      <p className="price">{item.price_1}</p>
+                                    </li>
+                                    <li>
+                                      <p className="text">Maximum</p>
+                                      <p className="price">{item.price_2}</p>
+                                    </li>
+                                    <li>
+                                      <p className="text">Access</p>
+                                      <p className="price">{item.price_3}</p>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
-                              <div className="content">
-                                <h5 className="heading">
-                                  <Link to="/project_v1">{item.mainToken.name} / {item.sideToken.symbol}</Link>
-                                </h5>
-                                <p className="desc">{item.desc}</p>
-                                <ul>
-                                  <li>
-                                    <p className="text">Min allocation</p>
-                                    <p className="price">{item.price_1}</p>
-                                  </li>
-                                  <li>
-                                    <p className="text">Maximum</p>
-                                    <p className="price">{item.price_2}</p>
-                                  </li>
-                                  <li>
-                                    <p className="text">Access</p>
-                                    <p className="price">{item.price_3}</p>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </SwiperSlide>
-                        ))}
+                            </SwiperSlide>
+                          ))}
                       </Swiper>
                     </div>
                   </TabPanel>
