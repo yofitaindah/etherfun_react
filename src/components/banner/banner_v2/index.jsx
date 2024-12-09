@@ -28,9 +28,9 @@ function Banner (props) {
                     data.slice(0,2).map(item => (
                         <SwiperSlide key={item.id}>
                             <div className="slider-st2">
-                                <img className="icon icon_1" src={require ("../../../assets/images/common/icon1_slider_2.png")} alt="" />
-                                <img className="icon icon_2" src={require ("../../../assets/images/common/icon2_slider_2.png")} alt="" />
-                                <img className="icon icon_3" src={require ("../../../assets/images/common/icon3_slider_2.png")} alt="" />
+                                <img className="icon icon_1" src={require ("../../../assets/images/common/logo_ether2.png")} alt="" />
+                                <img className="icon icon_2" src={require ("../../../assets/images/common/icon_ether.png")} alt="" />
+                                <img className="icon icon_3" src={require ("../../../assets/images/common/logo_ether2.png")} alt="" />
                                 <div className="overlay">
                                     <img src={require ("../../../assets/images//backgroup/bg-slider2.png")} alt="" />
                                 </div>
