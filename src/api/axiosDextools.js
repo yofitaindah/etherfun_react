@@ -2,12 +2,12 @@ import axios from "axios";
 
 // Create an Axios instance
 const axiosInstanceDextools = axios.create({
-  baseURL: process.env.REACT_APP_API_URL, // Replace with the Dextools API base URL
+  baseURL: window.REACT_APP_CONFIG.API_URL, // Replace with the Dextools API base URL
   timeout: 10000, // 10 seconds timeout
   headers: {
     "Content-Type": "application/json",
     accept: "application/json",
-    "x-api-key": process.env.REACT_APP_SECRET_KEY,
+    "x-api-key": window.REACT_APP_CONFIG.API_KEY,
   },
 });
 
