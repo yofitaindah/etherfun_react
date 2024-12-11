@@ -6,8 +6,8 @@ import img4 from '../images/slider/icon_3.png';
 const dataBanner = [
     {
         id: 1,
-        heading: 'Etherfun! Where Fun Meets the Future of Meme',
-        sub_heading: 'Etehrfun is the leading blockchain meme launchpad with over 50 projects launched',
+        heading: "Create, Earn, AI It's All Fun on Etherfun!",
+        sub_heading: "Why just laugh at memes when you can earn, share, and coin your own? It's fun, it's fast, and it's the future of meme culture",
         img1: img1,
         img2: img2,
         img3: img3,

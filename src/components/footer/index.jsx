@@ -114,24 +114,24 @@ function Footer(props) {
                     </div>
                     <ul className="social">
                         <li>
-                            <Link to="https://x.com/ether_fun">
+                            <a href="https://x.com/ether_fun" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src={TwitterIcon}
                                     alt="Dextool Icon"
                                     width="18"
                                     height="18"
                                 />
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link to="https://t.me/etherfunentry">
+                            <a href="https://t.me/etherfunentry" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src={TelegramIcon}
                                     alt="Dextool Icon"
                                     width="18"
                                     height="18"
                                 />
-                            </Link>
+                            </a>
                         </li>
                         <li>
                             <Link to="#">

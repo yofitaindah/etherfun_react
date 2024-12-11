@@ -39,8 +39,8 @@ function Banner (props) {
                                         <div className="col-md-12">
                                             <div className="box-slider">
                                                 <div className="content-box">
-                                                    <h1 className="title" >Etherfun! Where Fun Meets the Future of Meme</h1>
-                                                    <p className="sub-title">Etherfun is the leading blockchain gaming launchpad with over 50 projects launched and the <br className="show-destop" /> highest average ROI in the industry</p>
+                                                    <h1 className="title" >Create, Earn, AI It's All Fun on Etherfun!</h1>
+                                                    <p className="sub-title">Why just laugh at memes when you can earn, share, and coin your own?<br className="show-destop" /> It's fun, it's fast, and it's the future of meme culture</p>
                                                     <div className="wrap-btn">
                                                         <Link to="/faqs" className="tf-button style2">
                                                             HOW TO START
