@@ -14,7 +14,7 @@ const HotPairs = (props) => {
   const [dataTab] = useState([
     {
       id: 1,
-      title: "oncoming",
+      title: "",
     },
   ]);
 
@@ -63,7 +63,7 @@ const HotPairs = (props) => {
               data-aos-duration="1000"
             >
               <Tabs>
-                <TabList className="menu-tab">
+                {/* <TabList className="menu-tab">
                   {dataTab.map((idx) => (
                     <Tab className="fs-14 h6" key={idx.id}>
                       {idx.title}
@@ -71,8 +71,8 @@ const HotPairs = (props) => {
                   ))}
                 </TabList>
 
-                {dataTab.map((idx) => (
-                  <TabPanel key={idx.id} className="content-tab">
+                {dataTab.map((idx) => ( */}
+                  <TabPanel className="content-tab">
                     <div className="content-inner">
                       <Swiper
                         className="slider-3"
@@ -155,7 +155,7 @@ const HotPairs = (props) => {
                       </Swiper>
                     </div>
                   </TabPanel>
-                ))}
+                {/* ))} */}
               </Tabs>
             </div>
           </div>
