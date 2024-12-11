@@ -39,7 +39,7 @@ function Banner (props) {
                                         <div className="col-md-12">
                                             <div className="box-slider">
                                                 <div className="content-box">
-                                                    <h1 className="title" >Create, Earn, AI It's All Fun on Etherfun!</h1>
+                                                    <h1 className="title" >Create, Earn, AI <br className="show-destop" /> It's All Fun on Etherfun!</h1>
                                                     <p className="sub-title">Why just laugh at memes when you can earn, share, and coin your own?<br className="show-destop" /> It's fun, it's fast, and it's the future of meme culture</p>
                                                     <div className="wrap-btn">
                                                         <Link to="/faqs" className="tf-button style2">
