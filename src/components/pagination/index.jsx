@@ -88,11 +88,11 @@ const ServerPagination = ({ fetchData, totalPages }) => {
                 data-aos-duration="1000"
               >
                 <Tabs>
-                  <div className="wrapper_menutab">
+                  {/* <div className="wrapper_menutab">
                     <TabList className="menu-tab">
-                      <Tab className="fs-14 h6">Oncoming</Tab>
+                      <Tab className="fs-14 h6"></Tab>
                     </TabList>
-                  </div>
+                  </div> */}
 
                   <TabPanel className="content-tab mt40">
                     <div
