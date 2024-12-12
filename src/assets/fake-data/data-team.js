@@ -11,19 +11,23 @@ import img8 from '../images/common/team_8.png';
 const dataTeam = [
     {
         id: 1,
-        img : img1
+        img : img1,
+        name : 'Darrell Steward'
     }, 
     {
         id: 2,
-        img : img2
+        img : img2,
+        name : 'Kristin Watson'
     }, 
     {
         id: 3,
-        img : img3
+        img : img3,
+        name : 'Jacob Jones'
     }, 
     {
         id: 4,
-        img : img4
+        img : img4,
+        name : 'Jane Cooper'
     }, 
 ]
 

@@ -4,7 +4,7 @@ const dataFaq = [
     {
         id: 1,
         title: 'What is Etherfun?',
-        content: 'EtherFun is a platform that allows users to create their own tokens on the Ethereum network, therfun is designed to make it easy to create tokens with low costs and high transparency through an efficient bonding curve model.'
+        content: 'EtherFun is a platform that allows users to create their own tokens on the Ethereum network, Etherfun is designed to make it easy to create tokens with low costs and high transparency through an efficient bonding curve model.'
     }, 
     // {
     //     id: 2,
