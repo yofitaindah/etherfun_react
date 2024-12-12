@@ -144,14 +144,14 @@ function Footer(props) {
                             </a>
                         </li>
                         <li>
-                            <Link to="#">
+                            <a href="https://dexscreener.com/ethereum/0x438fd410a3ffc4a8ba2f3f385a918b1a589545a8" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src={EtherscanIcon}
                                     alt="Etherscan Icon"
                                     width="18"
                                     height="18"
                                 />
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>
