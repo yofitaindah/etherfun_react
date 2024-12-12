@@ -62,7 +62,7 @@ function Token(props) {
                     />
                     <div className="desc">
                       <p className="name">Total Supply</p>
-                      <p className="number">xxx.xxx.xxx</p>
+                      <p className="number">1.000.000.000</p>
                     </div>
                   </li>
                   {/* <li>

@@ -135,11 +135,11 @@ const ServerPagination = ({ fetchData, totalPages }) => {
                             </div>
                             <div className="content">
                               <div className="td td1">
-                                <p>Total raise</p>
+                                <p>Marketcap</p>
                                 <p>-</p>
                               </div>
                               <div className="td td2">
-                                <p>Price</p>
+                                <p>Liquidity</p>
                                 <p>-</p>
                               </div>
                               <div className="td td3">
