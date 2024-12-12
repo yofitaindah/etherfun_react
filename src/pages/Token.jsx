@@ -30,7 +30,7 @@ function Token(props) {
               >
                 <div className="total-token">
                   <p>
-                    Contract Address: <span>XXXXXXXXX</span>
+                    Contract Address: <span>0x970f5af544ce8782D2F01E80bf44Ab703d26bda9</span>
                   </p>
                   {/* <p>Public sale: <span> $0.24</span></p> */}
                 </div>
