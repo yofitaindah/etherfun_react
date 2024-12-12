@@ -133,15 +133,15 @@ function Footer(props) {
                                 />
                             </a>
                         </li>
-                        <li>
-                            <Link to="#">
+                        <li> 
+                            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x970f5af544ce8782D2F01E80bf44Ab703d26bda9" target="_blank" rel="noopener noreferrer">
                                 <img
                                     src={DextoolIcon}
                                     alt="Dextool Icon"
                                     width="18"
                                     height="18"
                                 />
-                            </Link>
+                            </a>
                         </li>
                         <li>
                             <Link to="#">
